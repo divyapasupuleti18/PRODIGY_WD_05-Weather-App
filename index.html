@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content=
+		"width=device-width, initial-scale=1.0">
+	<link rel="stylesheet"
+		href="style.css">
+	<script src="https://cdn.tailwindcss.com"></script>
+	<title>Weather App</title>
+</head>
+
+<body class="bg-gray-100 h-screen 
+			flex items-center justify-center">
+	<div class="border-stone-600 container
+				max-w-screen-sm
+				mx-auto p-8 bg-white rounded-md 
+				shadow-md max-w-md">
+		<h1 class="text-3xl text-center 
+				font-bold text-green-600 mb-6">
+			Weather App
+		</h1>
+		<div class="mb-4">
+			<label for="cityInput"
+				class="block text-sm font-semibold mb-2">
+				Enter Your City Name:
+			</label>
+			<input type="text" id="cityInput"
+				class="mt-1 p-3 border rounded-xl w-full 
+					focus:outline-none focus:ring 
+					focus:border-green-300"
+				placeholder="Jaisalmer">
+		</div>
+		<button id="getWeatherBtn"
+				class="bg-green-600 text-white 
+					p-3 mt-4 rounded-md 
+					focus:ring focus:border-">
+			Get Weather
+		</button>
+		<div id="weatherInfo"
+			class="mt-6 text-gray-800"></div>
+	</div>
+
+	<script src=
+"https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js">
+	</script>
+	<script src="script.js"></script>
+</body>
+
+</html>
